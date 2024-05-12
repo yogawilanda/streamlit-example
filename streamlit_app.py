@@ -51,12 +51,13 @@ lm_studio_url = "http://localhost:1234/v1"
 st.set_page_config(page_title="LLM Chat App")
 
 # Create a text input for user prompts
-prompt = st.text_input("Enter your prompt:")
+prompt = st.chat_input("Enter your prompt:")
 
-# Send the prompt to the LM Studio server
-response = requests.post(lm_studio_url, json={"prompt": prompt})
+# # Send the prompt to the LM Studio server
+# response = requests.post(lm_studio_url, json={"prompt": prompt})
 
-# Display the response from the server
-st.write(response.text)
+# # Display the response from the server
+# st.write(response.text)
+
 
 
