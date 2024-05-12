@@ -38,3 +38,10 @@ st.altair_chart(alt.Chart(df, height=700, width=700)
         color=alt.Color("idx", legend=None, scale=alt.Scale()),
         size=alt.Size("rand", legend=None, scale=alt.Scale(range=[1, 150])),
     ))
+
+
+# get from local server
+
+server =" http://localhost:1234/v1/models"
+
+
